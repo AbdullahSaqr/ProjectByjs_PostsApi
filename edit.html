@@ -1,0 +1,40 @@
+<!-- ================== DEV BY Abdullah Saqr ================== -->
+<!-- ================== DEV BY Abdullah Saqr ================== -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="index.html">
+    <title>Edit Photo</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Edit Photo</h1>
+        <form id="edit-form">
+            <label for="photo-title">Photo Title:</label>
+            <input type="text" id="photo-title" name="photo-title" required>
+            
+            <label for="album-id">Album ID:</label>
+            <input type="number" id="album-id" name="album-id" required>
+            
+            <button type="submit">Save</button>
+            <button type="button" id="cancel-button">Cancel</button>
+        </form>
+        <a id="back-button" href="index.html">Back</a>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+
+        let id = (new URLSearchParams(window.location.search)).get('photoId');
+
+        dispatchSingleData(assignFormData, id);
+
+        
+    </script>
+</body>
+</html>
+<!-- ================== DEV BY Abdullah Saqr ================== -->
+<!-- ================== DEV BY Abdullah Saqr ================== -->
